@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             x:Class="XFSharedStyles.MainPage">
+
+    <StackLayout>
+        <Label
+            Text="Welcome to Xamarin.Forms!"
+            StyleClass="LabelHeading"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+
+        <Label
+            Text="Here's a different coloured label!"
+            StyleClass="LabelBody"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+
+        <Button
+            Text="Dark Mode"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Pressed="DarkModeBtn_Pressed" />
+
+        <Button
+            Text="Light Mode"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Pressed="LightModeBtn_Pressed" />
+
+    </StackLayout>
+
+    <!--
+    <StackLayout>
+        <Label
+            Text="Welcome to Xamarin.Forms!"
+            TextColor="{DynamicResource PrimaryColor}"
+            FontSize="Title"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+
+        <Label
+            Text="Here's a different coloured label!"
+            TextColor="{DynamicResource AccentColor}"
+            FontSize="Medium"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+
+        <Button
+            Text="Dark Mode"
+            TextColor="{DynamicResource PrimaryColor}"
+            BackgroundColor="{DynamicResource ButtonColor}"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            x:Name="DarkModeBtn"
+            Pressed="DarkModeBtn_Pressed" />
+
+        <Button
+            Text="Light Mode"
+            TextColor="{DynamicResource PrimaryColor}"
+            BackgroundColor="{DynamicResource ButtonColor}"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            x:Name="LightModeBtn"
+            Pressed="LightModeBtn_Pressed" />
+
+    </StackLayout>
+    -->
+    
+</ContentPage>
