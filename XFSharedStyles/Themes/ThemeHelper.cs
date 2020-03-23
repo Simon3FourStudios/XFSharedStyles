@@ -28,9 +28,10 @@ namespace XFSharedStyles.Themes
 					break;
 			}
 
-			Application.Current.Resources.MergedDictionaries.Clear();
-			Application.Current.Resources.MergedDictionaries.Add(newTheme);
-			Application.Current.Resources.MergedDictionaries.Add(new SharedStyles());
+			Application.Current.Resources = newTheme;
+			//Application.Current.Resources.MergedDictionaries.Clear();
+			//Application.Current.Resources.MergedDictionaries.Add(newTheme);
+			//Application.Current.Resources.MergedDictionaries.Add(new SharedStyles());
 
 			CurrentTheme = theme;
 		}

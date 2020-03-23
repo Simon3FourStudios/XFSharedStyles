@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="XFSharedStyles.Themes.DarkTheme">
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:themes="clr-namespace:XFSharedStyles.Themes"
+    mc:Ignorable="d"
+    x:Class="XFSharedStyles.Themes.DarkTheme">
 
+    <ResourceDictionary.MergedDictionaries>
+        <themes:SharedStyles />
+    </ResourceDictionary.MergedDictionaries>
+    
     <Color x:Key="PrimaryColor">#F3F2F7</Color>
     <Color x:Key="AccentColor">#FFD60A</Color>
 
